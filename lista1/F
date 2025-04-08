@@ -1,0 +1,20 @@
+#include <bits/stdc++.h>
+using namespade std;
+int main (){
+    string palavra;
+    cin >> palavra;
+
+    string resultado = "";
+
+    for ( int i = 0; i < palavra.length(); i++){
+        char letra = palavra[i];
+
+        if (letra >= 'A' && letra ,= 'Z'){
+            letra = letra + 32;
+        }
+        if (letra != 'a' && letra != 'o' && letra != 'y' && letra != 'e' && letra != 'u' && letra != 'y' )
+        {resultado = resultado + "." + letra;}
+    }
+    cout << resultado << endl;
+    return 0;
+}
