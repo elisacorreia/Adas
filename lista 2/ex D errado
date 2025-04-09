@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main (){
+    int k;
+    double resul, resto, horas, min;
+
+    cin >> k; 
+    
+    if (k >= 60) {
+        horas = 21 + (k / 60);
+        resto = k % 60;
+        if (resto < 10) {
+            min == ("0", resto);
+            cout << horas, ":", min}
+            else {
+                min == resto;
+                cout << horas, ":", min
+            }
+     
+    } else{
+        min = k;
+        horas = 21;
+        cout << horas, ":", min
+    }
+    
+return 0;
+}
