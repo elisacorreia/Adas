@@ -1,0 +1,37 @@
+    cin >> n;
+    vector<int>numeros(n);
+    for (int i=0; i<n; i++){
+        cin >> numeros[i];
+    }
+   int i = 0;
+    int j = n-1;
+ 
+    int vez=1;
+    int sereja=0;
+    int dilma=0;
+        
+    while (i<=j){
+    if (vez == 1){
+    if (numeros[i] > numeros[j]){
+        sereja+=numeros[i];
+        vez = 2;
+        i++;
+    } else {
+     sereja+=numeros[j];
+        vez = 2; 
+        j--; }
+    }  else {
+            if (numeros[i] > numeros[j]){
+        dilma+=numeros[i];
+        vez = 1;
+        i++;
+        } else{
+        dilma+=numeros[j];
+        vez = 1; 
+        j--;
+        }
+    }
+}
+cout << sereja << " " << dilma << endl;
+   return 0; 
+}
